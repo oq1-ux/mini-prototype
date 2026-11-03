@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Garmin Connect – My Day</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <div class="phone">
@@ -48,9 +48,9 @@
       <section id="friends-panel" class="card" hidden>
         <span class="label">Friends Today</span>
         <ul class="friends">
-          <li><span class="avatar small">JL</span> Jordan L. <strong>12,301 steps</strong> <button class="cheer" data-name="Jordan L.">👏</button></li>
-          <li><span class="avatar small">MP</span> Maya P. <strong>9,455 steps</strong> <button class="cheer" data-name="Maya P.">👏</button></li>
-          <li><span class="avatar small">SK</span> Sam K. <strong>4,120 steps</strong> <button class="cheer" data-name="Sam K.">👏</button></li>
+          <li data-battery="88" data-sleep="90"><span class="avatar small">JL</span> <div class="friend-info">Jordan L.<span class="friend-rec"></span></div> <strong>12,301 steps</strong> <button class="cheer" data-name="Jordan L.">👏</button></li>
+          <li data-battery="58" data-sleep="72"><span class="avatar small">MP</span> <div class="friend-info">Maya P.<span class="friend-rec"></span></div> <strong>9,455 steps</strong> <button class="cheer" data-name="Maya P.">👏</button></li>
+          <li data-battery="24" data-sleep="41"><span class="avatar small">SK</span> <div class="friend-info">Sam K.<span class="friend-rec"></span></div> <strong>4,120 steps</strong> <button class="cheer" data-name="Sam K.">👏</button></li>
         </ul>
         <p id="friends-msg" class="label"></p>
       </section>
@@ -85,6 +85,6 @@
       <a>More</a>
     </nav>
   </div>
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

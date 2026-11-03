@@ -46,6 +46,16 @@ function getRecommendation(battery, sleep) {
   return { type: "easy", title: "🚶 Easy Workout", text: "Keep it light today. An easy jog, bike ride, or yoga is perfect." };
 }
 
+// Show each friend's recommendation in the friends list
+document.querySelectorAll(".friends li").forEach((friend) => {
+  const battery = Number(friend.dataset.battery);
+  const sleep = Number(friend.dataset.sleep);
+  const rec = getRecommendation(battery, sleep);
+  const recLabel = friend.querySelector(".friend-rec");
+  recLabel.className = `friend-rec ${rec.type}`;
+  recLabel.textContent = `${rec.title} · ⚡${battery} · 😴${sleep}`;
+});
+
 suggestBtn.addEventListener("click", () => {
   const rec = getRecommendation(Number(batteryInput.value), Number(sleepInput.value));
   suggestion.className = `suggestion ${rec.type}`;

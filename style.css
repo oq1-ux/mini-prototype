@@ -149,7 +149,14 @@ main { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
 
 .friends li strong { margin-left: auto; font-size: 14px; }
 
-.avatar.small { width: 28px; height: 28px; font-size: 11px; }
+.avatar.small { width: 28px; height: 28px; font-size: 11px; flex-shrink: 0; }
+
+.friend-info { display: flex; flex-direction: column; gap: 3px; }
+
+.friend-rec { font-size: 11px; font-weight: 600; }
+.friend-rec.hard { color: #f04e4e; }
+.friend-rec.easy { color: #f5b83d; }
+.friend-rec.rest { color: #3ddc97; }
 
 .cheer {
   border: none;
