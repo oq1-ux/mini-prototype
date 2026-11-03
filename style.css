@@ -84,6 +84,43 @@ main { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
 
 .activity { margin: 8px 0 0; }
 
+.friends-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 16px;
+  background: #007cc3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.friends-btn:hover { background: #11a9ed; }
+
+.friends { list-style: none; margin: 10px 0 0; padding: 0; }
+
+.friends li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #2b313b;
+}
+
+.friends li strong { margin-left: auto; font-size: 14px; }
+
+.avatar.small { width: 28px; height: 28px; font-size: 11px; }
+
+.cheer {
+  border: none;
+  background: #2b313b;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
 .bottom-nav {
   display: flex;
   justify-content: space-around;
