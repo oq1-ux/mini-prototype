@@ -56,6 +56,22 @@
       </section>
 
       <section class="card">
+        <span class="label">Daily Suggestion</span>
+        <div class="slider-row">
+          <label for="battery-input">⚡ Body Battery</label>
+          <input type="range" id="battery-input" min="0" max="100" value="74">
+          <output id="battery-value">74</output>
+        </div>
+        <div class="slider-row">
+          <label for="sleep-input">😴 Sleep Score</label>
+          <input type="range" id="sleep-input" min="0" max="100" value="81">
+          <output id="sleep-value">81</output>
+        </div>
+        <button id="suggest-btn" class="suggest-btn">💡 What should I do today?</button>
+        <div id="suggestion" class="suggestion" hidden></div>
+      </section>
+
+      <section class="card">
         <span class="label">Last Activity</span>
         <p class="activity">🏃 Morning Run · 5.2 km · 28:14</p>
       </section>

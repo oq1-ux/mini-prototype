@@ -98,6 +98,45 @@ main { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
 
 .friends-btn:hover { background: #11a9ed; }
 
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.slider-row label { width: 120px; }
+.slider-row input { flex: 1; accent-color: #11a9ed; }
+.slider-row output { width: 28px; text-align: right; font-weight: 600; }
+
+.suggest-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #11a9ed;
+  border-radius: 12px;
+  background: transparent;
+  color: #11a9ed;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.suggest-btn:hover { background: #11a9ed22; }
+
+.suggestion {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border-left: 4px solid;
+}
+
+.suggestion p { margin: 6px 0 0; font-size: 14px; color: #c9d1dc; }
+.suggestion.hard { border-color: #f04e4e; background: #f04e4e1a; }
+.suggestion.easy { border-color: #f5b83d; background: #f5b83d1a; }
+.suggestion.rest { border-color: #3ddc97; background: #3ddc971a; }
+
 .friends { list-style: none; margin: 10px 0 0; padding: 0; }
 
 .friends li {
